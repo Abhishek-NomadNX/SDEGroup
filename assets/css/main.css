@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Roboto:300,300i,400,500,700,900&display=swap");
 
+:root {
+    --color-primary: #f27420;
+    --color-secondary: #003f72;
+}
+
+
 .white-bg {
     background: #ffffff
 }
@@ -9,7 +15,7 @@
 }
 
 .top-bg {
-    background: #00163e
+    background: #003F72;
 }
 
 .gray-bg {
@@ -25,7 +31,7 @@
 }
 
 .theme-bg {
-    background: #f27420
+    background: var(--color-primary)
 }
 
 .brand-bg {
@@ -45,30 +51,30 @@
 }
 
 .theme-color {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .boxed-btn {
     background: #fff;
-    color: #f27420 !important;
+    color: var(--color-primary) !important;
     display: inline-block;
     padding: 18px 44px;
     font-family: "Barlow", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #f27420;
+    border: 1px solid var(--color-primary);
     letter-spacing: 3px;
     text-align: center;
-    color: #f27420;
+    color: var(--color-primary);
     text-transform: uppercase;
     cursor: pointer
 }
 
 .boxed-btn:hover {
-    background: #f27420;
+    background: var(--color-primary);
     color: #fff !important;
-    border: 1px solid #f27420
+    border: 1px solid var(--color-primary)
 }
 
 .boxed-btn:focus {
@@ -425,7 +431,7 @@ hr {
 
 .btn::before {
     position: absolute;
-    background: #f27420;
+    background: var(--color-primary);
     width: 100%;
     height: 100%;
     content: "";
@@ -498,7 +504,7 @@ hr {
 }
 
 .arrow-btn {
-    background: #f27420;
+    background: var(--color-primary);
     padding: 19px 15px;
     display: inline-block;
     line-height: 0;
@@ -518,7 +524,7 @@ hr {
 }
 
 #scrollUp {
-    background: #f27420;
+    background: var(--color-primary);
     height: 50px;
     width: 50px;
     right: 31px;
@@ -1941,7 +1947,7 @@ hr {
     position: relative;
     border-style: solid;
     border-width: 3px;
-    border-top-color: #f27420;
+    border-top-color: var(--color-primary);
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -2330,7 +2336,7 @@ hr {
 }
 
 .theme-bg {
-    background: #f27420
+    background: var(--color-primary)
 }
 
 .brand-bg {
@@ -2350,7 +2356,7 @@ hr {
 }
 
 .theme-color {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .header-area .header-top {
@@ -2466,7 +2472,7 @@ hr {
 }
 
 .header-area .header-top .header-info-right .header-social li a:hover {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .main-header {
@@ -2507,7 +2513,7 @@ hr {
 }
 
 .main-header .main-menu ul li:hover>a {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .main-header .main-menu ul ul.submenu {
@@ -2520,7 +2526,7 @@ hr {
     opacity: 0;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
     padding: 17px 0;
-    border-top: 5px solid #f27420;
+    border-top: 5px solid var(--color-primary);
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
@@ -2541,7 +2547,7 @@ hr {
 }
 
 .main-header .main-menu ul ul.submenu>li>a:hover {
-    color: #f27420;
+    color: var(--color-primary);
     background: none
 }
 
@@ -2585,7 +2591,7 @@ hr {
 }
 
 .slicknav_menu .slicknav_icon-bar {
-    background-color: #f27420 !important
+    background-color: var(--color-primary) !important
 }
 
 .slicknav_nav {
@@ -2602,7 +2608,7 @@ hr {
 
 .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .slicknav_menu {
@@ -3041,7 +3047,7 @@ hr {
 
 .gallery-area .gallery-box .single-gallery::after {
     content: "";
-    background: #f27420;
+    background: var(--color-primary);
     position: absolute;
     top: 0;
     left: 0;
@@ -3068,7 +3074,7 @@ hr {
 }
 
 .gallery-area .gallery-box .single-gallery .g-caption1 span {
-    color: #f27420;
+    color: var(--color-primary);
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -3318,7 +3324,7 @@ hr {
 }
 
 .david-droga-area .single-david .david-captoin a:hover {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .david-droga-area .single-david .david-captoin a.d-btn {
@@ -3340,7 +3346,7 @@ hr {
 }
 
 .david-droga-area .single-david .david-captoin a:hover::before {
-    background: #f27420
+    background: var(--color-primary)
 }
 
 .david-img:hover .david-img img {
@@ -3350,7 +3356,7 @@ hr {
 .wantToWork-area {
     position: relative;
     z-index: 0;
-    background: #f27420;
+    background: var(--color-primary);
     overflow: hidden
 }
 
@@ -3525,7 +3531,7 @@ hr {
     color: #fff;
     opacity: 0;
     visibility: hidden;
-    background: #f27420
+    background: var(--color-primary)
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3619,7 +3625,7 @@ hr {
 
 .blog-area .single-blog .blog-caption .blog-cap-top span {
     color: #fff;
-    background: #f27420;
+    background: var(--color-primary);
     padding: 4px 13px;
     text-transform: uppercase;
     font-size: 14px;
@@ -3634,7 +3640,7 @@ hr {
 }
 
 .blog-area .single-blog .blog-caption .blog-cap-top ul li a {
-    color: #f27420;
+    color: var(--color-primary);
     font-size: 14px
 }
 
@@ -3653,7 +3659,7 @@ hr {
 }
 
 .blog-area .single-blog .blog-caption .blog-cap-mid p a:hover {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .blog-area .single-blog .blog-caption .blog-cap-bottom {
@@ -3675,7 +3681,7 @@ hr {
 }
 
 .footer-area .footer-social2 a:hover {
-    background: #f27420;
+    background: var(--color-primary);
     color: #7f7f7f;
     border: 1px solid transparent
 }
@@ -3717,7 +3723,7 @@ hr {
 }
 
 .footer-area .footer-tittle ul li a:hover {
-    color: #f27420;
+    color: var(--color-primary);
     padding-left: 5px
 }
 
@@ -3744,12 +3750,12 @@ hr {
     border: 0;
     cursor: pointer;
     padding: 13px 22px;
-    background: #f27420;
+    background: var(--color-primary);
     line-height: 1
 }
 
 .footer-area .info.error {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .footer-bg {
@@ -3770,11 +3776,11 @@ hr {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .footer-bottom-area .footer-copy-right p a:hover {
@@ -3805,7 +3811,7 @@ hr {
 }
 
 .footer-bottom-area .footer-social a i:hover {
-    color: #f27420
+    color: var(--color-primary)
 }
 
 .hero-caption span {
@@ -3823,7 +3829,7 @@ hr {
     content: "";
     width: 75px;
     height: 3px;
-    background: #f27420;
+    background: var(--color-primary);
     left: 0;
     top: 52%;
     transform: translateY(-50%)
@@ -3847,7 +3853,7 @@ hr {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #f27420 0%, #f27420 99%);
+    background: -webkit-linear-gradient(131deg, var(--color-primary) 0%, var(--color-primary) 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -4352,7 +4358,7 @@ hr {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #f27420;
+    background-color: var(--color-primary);
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -4434,7 +4440,7 @@ hr {
 }
 
 .blog_right_sidebar .search_widget .input-group button {
-    background: #f27420;
+    background: var(--color-primary);
     border-left: 0;
     border: 1px solid #f0e9ff;
     padding: 4px 15px;
@@ -4552,7 +4558,7 @@ hr {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #f27420;
+    background: var(--color-primary);
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;

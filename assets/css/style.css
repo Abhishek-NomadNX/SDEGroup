@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Teko:300,400,500,600,700&display=swap");
 
+:root {
+    --color-primary: #f27420;
+    --color-secondary: #003f72;
+}
+
 .white-bg {
     background: #ffffff
 }
@@ -2570,7 +2575,7 @@ hr {
 }
 
 .header-area {
-    background: rgba(25, 26, 51, 0.7)
+    background: rgba(15, 15, 29, 0.7)
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2752,7 +2757,7 @@ hr {
 }
 
 .header-sticky.sticky-bar.sticky {
-    background: #191a33
+    background: #003F72
 }
 
 .header-sticky ul li a {
@@ -3431,7 +3436,7 @@ hr {
 .support-company-area .support-wrapper .right-content .support-img-cap {
     position: absolute;
     bottom: 0px;
-    background: #1f2b7b;
+    background: var(--color-secondary);
     padding: 59px 28px;
     border-radius: 5px
 }
@@ -3635,7 +3640,7 @@ hr {
 }
 
 .latest-news-area .single-news {
-    background: #00235b
+    background: var(--color-secondary)
 }
 
 .latest-news-area .single-news .news-img {
@@ -3902,7 +3907,7 @@ hr {
 .project-area .project-caption .single-project:hover .project-cap,
 .about-area .project-caption .single-project:hover .project-cap,
 .contact-section .project-caption .single-project:hover .project-cap {
-    background: #00235b
+    background: var(--color-secondary)
 }
 
 .project-area .project-caption .single-project:hover .project-cap h4 a,
@@ -4208,7 +4213,7 @@ hr {
 }
 
 .t-bg {
-    background: #00235b
+    background: var(--color-secondary)
 }
 
 .slick-initialized .slick-slide {
@@ -5792,7 +5797,7 @@ hr {
 }
 
 .contact-info .media-body h3 a:hover {
-    color: #1f2b7b
+    color: var(--color-secondary)
 }
 
 .contact-info .media-body p {
@@ -5899,7 +5904,7 @@ hr {
 }
 
 .contact-section .btn_2:hover {
-    background-color: #1f2b7b
+    background-color: var(--color-secondary)
 }
 
 .breadcam_bg {
@@ -6188,7 +6193,7 @@ sup,
 sub,
 u,
 del {
-    color: #1f2b7b
+    color: var(--color-secondary)
 }
 
 .typography h1,
@@ -6300,25 +6305,25 @@ del {
 
 .genric-btn.primary {
     color: #fff;
-    background: #1f2b7b;
+    background: var(--color-secondary);
     border: 1px solid transparent
 }
 
 .genric-btn.primary:hover {
-    color: #1f2b7b;
-    border: 1px solid #1f2b7b;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     background: #fff
 }
 
 .genric-btn.primary-border {
-    color: #1f2b7b;
-    border: 1px solid #1f2b7b;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     background: #fff
 }
 
 .genric-btn.primary-border:hover {
     color: #fff;
-    background: #1f2b7b;
+    background: var(--color-secondary);
     border: 1px solid transparent
 }
 
@@ -6454,7 +6459,7 @@ del {
 .generic-blockquote {
     padding: 30px 50px 30px 30px;
     background: #f9f9ff;
-    border-left: 2px solid #1f2b7b
+    border-left: 2px solid var(--color-secondary)
 }
 
 .progress-table-wrap {
@@ -6584,7 +6589,7 @@ del {
     position: absolute;
     width: 14px;
     height: 14px;
-    border: 3px solid #1f2b7b;
+    border: 3px solid var(--color-secondary);
     background: #fff;
     top: 4px;
     left: 0;
@@ -6597,7 +6602,7 @@ del {
 
 .ordered-list li {
     list-style-type: decimal-leading-zero;
-    color: #1f2b7b;
+    color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6610,7 +6615,7 @@ del {
 .ordered-list-alpha li {
     margin-left: 30px;
     list-style-type: lower-alpha;
-    color: #1f2b7b;
+    color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6623,7 +6628,7 @@ del {
 .ordered-list-roman li {
     margin-left: 30px;
     list-style-type: lower-roman;
-    color: #1f2b7b;
+    color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6695,7 +6700,7 @@ del {
 
 .single-input-primary:focus {
     outline: none;
-    border: 1px solid #1f2b7b
+    border: 1px solid var(--color-secondary)
 }
 
 .single-input-accent {
@@ -6756,7 +6761,7 @@ del {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #1f2b7b;
+    background: var(--color-secondary);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -6839,7 +6844,7 @@ del {
 }
 
 .primary-switch input:checked+label:before {
-    background: #1f2b7b
+    background: var(--color-secondary)
 }
 
 .confirm-switch {
@@ -7188,12 +7193,12 @@ del {
 }
 
 .default-select .nice-select .list .option.selected {
-    color: #1f2b7b;
+    color: var(--color-secondary);
     background: transparent
 }
 
 .default-select .nice-select .list .option:hover {
-    color: #1f2b7b;
+    color: var(--color-secondary);
     background: transparent
 }
 
@@ -7243,12 +7248,12 @@ del {
 }
 
 .form-select .nice-select .list .option.selected {
-    color: #1f2b7b;
+    color: var(--color-secondary);
     background: transparent
 }
 
 .form-select .nice-select .list .option:hover {
-    color: #1f2b7b;
+    color: var(--color-secondary);
     background: transparent
 }
 
