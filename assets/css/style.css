@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Teko:300,400,500,600,700&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-primary: #f27420;
     --color-secondary: #003f72;
