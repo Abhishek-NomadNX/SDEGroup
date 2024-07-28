@@ -2720,6 +2720,11 @@ hr {
 }
 
 @media (max-width: 575px) {
+
+    .big-logo {
+        display: none;
+    }
+
     .main-header .logo .big-logo {
         display: none
     }
