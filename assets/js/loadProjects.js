@@ -18,25 +18,29 @@ fetch(url)
         const Project = getProject(data.table.rows[0]);
         console.log(Projects);
 
-        Projects.forEach(project => {
-            projectContainer.innerHTML = projectContainer.innerHTML + (getProjectCard(project));
-        });
+        for (let i = 0; i < Projects.length; i++) {
+            projectContainer.innerHTML = projectContainer.innerHTML + (getProjectCard(Projects[i], i + 1));
+        }
+
+        // Projects.forEach(project => {
+        //     projectContainer.innerHTML = projectContainer.innerHTML + (getProjectCard(project));
+        // });
 
 
 
     })
 
-function getProjectCard(project) {
+function getProjectCard(project, index) {
     return `<div class="col-lg-4 col-md-6">
                         <div class="single-project mb-30">
                             <div class="project-img">
                                 <img src="${project.thumbnailURL}">
                             </div>
                             <div class="project-cap">
-                                <a href="project_details.html" class="plus-btn">
+                                <a href="/projectDetails.html?rowId=${index}" class="plus-btn">
                                 <i class="ti-plus"></i></a>
-                                <h4><a href="project_details.html">${project.name}</a></h4>
-                                <h4><a href="project_details.html"><span  style="font-size: 18px; font-weight: 400;">| ${project.ProjectType}</span></a></h4>
+                                <h4><a href="/projectDetails.html?rowId=${index}">${project.name}</a></h4>
+                                <h4><a href="/projectDetails.html?rowId=${index}"><span  style="font-size: 18px; font-weight: 400;">| ${project.ProjectType}</span></a></h4>
                              </div>
                         </div>
                     </div>`;
