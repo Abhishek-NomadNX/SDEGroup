@@ -37,10 +37,10 @@ function getProjectCard(project, index) {
                                 <img src="${project.thumbnailURL}">
                             </div>
                             <div class="project-cap">
-                                <a href="/projectDetails.html?rowId=${index}" class="plus-btn">
+                                <a href="projectDetails.html?rowId=${index}" class="plus-btn">
                                 <i class="ti-plus"></i></a>
-                                <h4><a href="/projectDetails.html?rowId=${index}">${project.name}</a></h4>
-                                <h4><a href="/projectDetails.html?rowId=${index}"><span  style="font-size: 18px; font-weight: 400;">| ${project.ProjectType}</span></a></h4>
+                                <h4><a href="projectDetails.html?rowId=${index}">${project.name}</a></h4>
+                                <h4><a href="projectDetails.html?rowId=${index}"><span  style="font-size: 18px; font-weight: 400;">| ${project.ProjectType}</span></a></h4>
                              </div>
                         </div>
                     </div>`;
