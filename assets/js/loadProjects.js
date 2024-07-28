@@ -67,10 +67,6 @@ function getProject(data) {
         name: data.c[ProjectIds.name]?.v,
         thumbnailURL: getimagelink(data.c[ProjectIds.thumbnailURL]?.v),
         thumbnaildesc: data.c[ProjectIds.thumbnaildesc]?.v,
-        thumbnailURL2: getimagelink(data.c[ProjectIds.thumbnailURL2]?.v),
-        thumbnaildesc2: data.c[ProjectIds.thumbnaildesc2]?.v,
-        thumbnailURL3: getimagelink(data.c[ProjectIds.thumbnailURL3]?.v),
-        thumbnaildesc3: data.c[ProjectIds.thumbnaildesc3]?.v,
         projectDetails: data.c[ProjectIds.projectDetails]?.v,
         ProjectClinename: data.c[ProjectIds.ProjectClinename]?.v,
         projectCompletionDate: data.c[ProjectIds.ProjectCompletionDate]?.v,
@@ -83,6 +79,7 @@ function getProject(data) {
 
 
 function getimagelink(link) {
+    if (!link) return null;
     const id = link.substring(link.lastIndexOf('=') + 1);
     return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
     //return `https://drive.google.com/uc?export=download&id=${id}`

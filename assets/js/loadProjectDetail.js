@@ -145,6 +145,7 @@ function getProject(data) {
     return Project;
 }
 function getimagelink(link) {
+    if (!link) return null;
     const id = link.substring(link.lastIndexOf('=') + 1);
     return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
     //return `https://drive.google.com/uc?export=download&id=${id}`
