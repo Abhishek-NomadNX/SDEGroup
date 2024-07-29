@@ -34,7 +34,7 @@ function getProjectCard(project, index) {
     return `<div class="col-lg-4 col-md-6">
                         <div class="single-project mb-30">
                             <div class="project-img">
-                                <img src="${project.thumbnailURL}">
+                                <img src="${project.thumbnailURL}" style="height:40vh; object-fit:cover">
                             </div>
                             <div class="project-cap">
                                 <a href="projectDetails.html?rowId=${index}" class="plus-btn">
